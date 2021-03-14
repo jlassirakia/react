@@ -1,34 +1,75 @@
 
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-import {Button,Form} from "react-bootstrap"
-
+import Navbar from 'react-bootstrap/Navbar';
+import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
 
 function App() {
-  return (
+
+    const  user =[{ nom:'alex', commenter:'I came here to watch the ads unfortunately I kept getting interrupted by some guy gabbing on about JavaScript.'},{ nom:'Emma ', commenter:'That class let me know what is JavaScript. I will be learn this in my hard time. Thank you very much'},{ nom:'Nadia', commenter:'It s important to put console.log at the end'}];
+    
+    const images =[{description: 'React Bootstrap Tutorial ',url:'https://www.youtube.com/embed/W6NZfCO5SIk'},
+  ,{description:'Login system using PHP with MYSQL database',url:'https://www.youtube.com/embed/W6NZfCO5SIk'}
+  ,{description:'React Router Tutorial | React For Beginners',url:'https://www.youtube.com/embed/W6NZfCO5SIk'}
+  ,{description:'JAVA - How To Design Login And Register Form In Java',url:'https://www.youtube.com/embed/W6NZfCO5SIk'}
+  ,{description:'PHP CRUD Tutorial with MySQL & Bootstrap 4 (Create, Read,',url:'https://www.youtube.com/embed/W6NZfCO5SIk'}];
+    return(
+
+
+
+      
+    <div className="con">
+      <container>
+      <Navbar bg="light" variant="light">
+    <Navbar.Brand href="#home">Rechercher</Navbar.Brand>
    
-    <Form>
-       <h1> Login </h1>
-    <Form.Group controlId="formBasicEmail">
-      <Form.Label className="label"> <b>Email address</b></Form.Label>
-      <Form.Control className="Box" type="email" placeholder="Enter email" />
-      <Form.Text className="text-muted">
-        
-      </Form.Text>
-    </Form.Group>
+    <Form inline>
+      <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+    </Form>
+  </Navbar>
+<div class="row">
+
+  <div class="col-sm-8"><iframe title="hello" width="950" height="480" m src="https://www.youtube.com/embed/W6NZfCO5SIk" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe>
+<p className="sous-titre" > <b>JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour </b></p> <br></br>
+{ user.map(com =>  (
+          <div> 
+             <p  className="usern" > <b>{com.nom}:</b></p>
+          <p className="userC">{com.commenter}</p> 
+          </div>
+        )
+        )}</div>
+ 
+  <div class="col-sm-4">
+       
+
+{
+  images.map(imge=> (
+    <div> <p className="userd"><b>{imge.description}:</b> </p>
+   <div> <iframe title="hello" width="200" height="100" m src={imge.url}
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+allowfullscreen></iframe> </div>
+    
   
-    <Form.Group controlId="formBasicPassword">
-      <Form.Label className="label"><b>Password </b></Form.Label>
-      <Form.Control className="Box" type="password" placeholder="Password" />
-    </Form.Group>
-    <Form.Group controlId="formBasicCheckbox">
-      <Form.Check  className ="check"  type="checkbox" label="Check me out" />
-    </Form.Group>
-    <Button variant="primary" type="submit">
-      Submit
-    </Button>
-  </Form>
+  
+      </div>
+  
+  
+  ))
+  }</div>
+</div>
+
+
+</container>
+   </div>
+   
+
+   
+   
   );
 }
 
