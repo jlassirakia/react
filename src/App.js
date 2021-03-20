@@ -8,12 +8,12 @@ import FormControl from 'react-bootstrap/FormControl';
 function App() {
 
     const  user =[{ nom:'alex', commenter:'I came here to watch the ads unfortunately I kept getting interrupted by some guy gabbing on about JavaScript.'},{ nom:'Emma ', commenter:'That class let me know what is JavaScript. I will be learn this in my hard time. Thank you very much'},{ nom:'Nadia', commenter:'It s important to put console.log at the end'}];
-    
-    const images =[{description: 'React Bootstrap Tutorial ',url:'https://www.youtube.com/embed/W6NZfCO5SIk'},
-  ,{description:'Login system using PHP with MYSQL database',url:'https://www.youtube.com/embed/W6NZfCO5SIk'}
-  ,{description:'React Router Tutorial | React For Beginners',url:'https://www.youtube.com/embed/W6NZfCO5SIk'}
-  ,{description:'JAVA - How To Design Login And Register Form In Java',url:'https://www.youtube.com/embed/W6NZfCO5SIk'}
-  ,{description:'PHP CRUD Tutorial with MySQL & Bootstrap 4 (Create, Read,',url:'https://www.youtube.com/embed/W6NZfCO5SIk'}];
+  
+    const images =[{description: 'React Bootstrap Tutorial ',url:'https://www.youtube.com/embed/7BKjxFmfwd4'},
+  ,{description:'Login system using PHP with MYSQL database',url:'https://www.youtube.com/embed/N3AkSS5hXMA'}
+  ,{description:'React Router Tutorial | React For Beginners',url:'https://www.youtube.com/embed/m7OWXtbiXX8'}
+  ,{description:'JAVA - How To Design Login And Register Form In Java',url:'https://www.youtube.com/embed/-_X6PhkjpzU'}
+  ,{description:'PHP CRUD Tutorial with MySQL & Bootstrap 4 (Create, Read,',url:'https://www.youtube.com/embed/NCwa_xi0Uuc'}];
     return(
 
 
@@ -54,7 +54,7 @@ frameborder="0"
 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
 allowfullscreen></iframe> </div>
     
-  
+    
   
       </div>
   
@@ -69,8 +69,11 @@ allowfullscreen></iframe> </div>
    
 
    
-   
   );
 }
 
 export default App;
+
+
+
+
